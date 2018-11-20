@@ -1,0 +1,941 @@
+-- Merging decision tree log ---
+manifest
+ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:2:1-514:12
+INJECTED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:2:1-514:12
+INJECTED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:2:1-514:12
+INJECTED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:2:1-514:12
+INJECTED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:2:1-514:12
+INJECTED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:2:1-514:12
+INJECTED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:2:1-514:12
+	package
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:4:5-39
+		INJECTED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml
+		INJECTED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml
+	android:sharedUserId
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:5:5-45
+	android:versionName
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:7:5-32
+		INJECTED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml
+		INJECTED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:3:5-63
+	android:versionCode
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:6:5-36
+		INJECTED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml
+		INJECTED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml
+uses-permission#com.google.android.gm.permission.WRITE_GMAIL
+ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:9:5-84
+	android:name
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:9:22-81
+uses-permission#com.google.android.gm.permission.READ_GMAIL
+ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:10:5-83
+	android:name
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:10:22-80
+uses-permission#android.permission.WRITE_SETTINGS
+ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:11:5-73
+	android:name
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:11:22-70
+uses-permission#android.permission.WRITE_SECURE_SETTINGS
+ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:12:5-80
+	android:name
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:12:22-77
+uses-permission#android.permission.DEVICE_POWER
+ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:13:5-71
+	android:name
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:13:22-68
+uses-permission#android.permission.CHANGE_CONFIGURATION
+ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:14:5-79
+	android:name
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:14:22-76
+uses-permission#android.permission.MOUNT_UNMOUNT_FILESYSTEMS
+ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:15:5-84
+	android:name
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:15:22-81
+uses-permission#android.permission.VIBRATE
+ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:16:5-66
+	android:name
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:16:22-63
+uses-permission#android.permission.BLUETOOTH
+ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:17:5-68
+	android:name
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:17:22-65
+uses-permission#android.permission.BLUETOOTH_ADMIN
+ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:18:5-74
+	android:name
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:18:22-71
+uses-permission#android.permission.NFC
+ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:19:5-62
+	android:name
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:19:22-59
+uses-permission#android.permission.HARDWARE_TEST
+ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:20:5-72
+	android:name
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:20:22-69
+uses-permission#android.permission.CALL_PHONE
+ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:21:5-69
+	android:name
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:21:22-66
+uses-permission#android.permission.MODIFY_AUDIO_SETTINGS
+ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:22:5-80
+	android:name
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:22:22-77
+uses-permission#android.permission.MASTER_CLEAR
+ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:23:5-71
+	android:name
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:23:22-68
+uses-permission#android.permission.USE_CREDENTIALS
+ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:24:5-74
+	android:name
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:24:22-71
+uses-permission#com.google.android.googleapps.permission.GOOGLE_AUTH
+ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:25:5-92
+	android:name
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:25:22-89
+uses-permission#android.permission.ACCESS_DOWNLOAD_MANAGER
+ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:26:5-82
+	android:name
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:26:22-79
+uses-permission#android.permission.READ_CONTACTS
+ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:27:5-72
+	android:name
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:27:22-69
+uses-permission#android.permission.WRITE_CONTACTS
+ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:28:5-73
+	android:name
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:28:22-70
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:29:5-76
+	android:name
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:29:22-73
+uses-permission#android.permission.CHANGE_WIFI_STATE
+ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:30:5-76
+	android:name
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:30:22-73
+uses-permission#android.permission.INTERNET
+ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:31:5-67
+	android:name
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:31:22-64
+uses-permission#android.permission.CLEAR_APP_USER_DATA
+ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:32:5-78
+	android:name
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:32:22-75
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:33:5-75
+	android:name
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:33:22-72
+uses-permission#android.permission.MODIFY_PHONE_STATE
+ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:34:5-77
+	android:name
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:34:22-74
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:35:5-80
+	android:name
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:35:22-78
+uses-permission#android.permission.WRITE_APN_SETTINGS
+ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:36:5-76
+	android:name
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:36:22-74
+uses-permission#android.permission.ACCESS_CHECKIN_PROPERTIES
+ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:37:5-83
+	android:name
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:37:22-81
+uses-permission#android.permission.READ_USER_DICTIONARY
+ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:38:5-78
+	android:name
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:38:22-76
+uses-permission#android.permission.WRITE_USER_DICTIONARY
+ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:39:5-79
+	android:name
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:39:22-77
+uses-permission#android.permission.FORCE_STOP_PACKAGES
+ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:40:5-77
+	android:name
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:40:22-75
+uses-permission#android.permission.RESTART_PACKAGES
+ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:41:5-74
+	android:name
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:41:22-72
+uses-permission#android.permission.PACKAGE_USAGE_STATS
+ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:42:5-77
+	android:name
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:42:22-75
+uses-permission#android.permission.BATTERY_STATS
+ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:43:5-71
+	android:name
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:43:22-69
+uses-permission#com.android.launcher.permission.READ_SETTINGS
+ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:44:5-85
+	android:name
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:44:22-82
+uses-permission#com.android.launcher.permission.WRITE_SETTINGS
+ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:45:5-86
+	android:name
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:45:22-83
+uses-permission#android.permission.MOVE_PACKAGE
+ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:46:5-71
+	android:name
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:46:22-68
+uses-permission#android.permission.MANAGE_USB
+ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:47:5-69
+	android:name
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:47:22-66
+uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
+ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:48:5-81
+	android:name
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:48:22-78
+uses-permission#android.permission.WAKE_LOCK
+ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:49:5-67
+	android:name
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:49:22-65
+uses-permission#android.permission.DISABLE_KEYGUARD
+ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:50:5-75
+	android:name
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:50:22-72
+uses-permission#android.permission.SET_WALLPAPER
+ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:52:5-72
+	android:name
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:52:22-69
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:53:5-79
+	android:name
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:53:22-76
+uses-permission#android.permission.CAMERA
+ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:54:5-65
+	android:name
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:54:22-62
+uses-feature#android.hardware.camera
+ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:55:5-60
+	android:name
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:55:19-57
+uses-feature#android.hardware.camera.autofocus
+ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:56:5-95
+	android:required
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:56:68-92
+	android:name
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:56:19-67
+uses-permission#android.permission.FLASHLIGHT
+ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:57:5-69
+	android:name
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:57:22-66
+uses-permission#android.hardware.camera
+ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:58:5-63
+	android:name
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:58:22-60
+uses-permission#com.qualcomm.permission.QCOM_DIAG
+ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:60:5-72
+	android:name
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:60:22-70
+uses-permission#com.qualcomm.permission.QCOM_RADIO
+ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:61:5-73
+	android:name
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:61:22-71
+application
+ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:63:5-509:19
+	android:label
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:63:18-50
+	android:theme
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:64:9-55
+uses-library#com.readboy.nv
+ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:66:6-68:21
+	android:name
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:67:10-39
+activity#com.mediatek.factorymode.FactoryMode
+ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:70:9-81:20
+	android:screenOrientation
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:73:13-49
+	android:label
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:72:13-45
+	android:name
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:71:13-40
+intent-filter#action:name:android.intent.action.MAIN+action:name:android.intent.action.VIEW+category:name:android.intent.category.DEFAULT
+ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:74:13-80:29
+action#android.intent.action.VIEW
+ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:75:17-69
+	android:name
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:75:25-66
+action#android.intent.action.MAIN
+ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:76:17-68
+	android:name
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:76:25-66
+category#android.intent.category.DEFAULT
+ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:77:17-76
+	android:name
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:77:27-73
+service#com.mediatek.factorymode.CurrentConsumptionService
+ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:83:9-70
+	android:name
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:83:18-59
+service#com.mediatek.factorymode.CPUTemperatureService
+ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:85:9-66
+	android:name
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:85:18-55
+receiver#com.mediatek.factorymode.EntranceReceiver
+ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:88:9-93:20
+	android:name
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:88:19-51
+intent-filter#action:name:android.provider.Telephony.SECRET_CODE+data:host:83789+data:scheme:android_secret_code
+ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:89:13-92:29
+action#android.provider.Telephony.SECRET_CODE
+ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:90:17-80
+	android:name
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:90:25-78
+data
+ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:91:17-82
+	android:host
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:91:60-80
+	android:scheme
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:91:23-59
+service#com.mediatek.factorymode.wifi.wifiStateListener
+ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:94:9-83
+	android:name
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:94:18-80
+activity#com.mediatek.factorymode.AutoTest
+ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:97:9-101:52
+	android:screenOrientation
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:101:13-49
+	android:label
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:99:13-45
+	android:theme
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:100:13-44
+	android:name
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:98:13-37
+activity#com.mediatek.factorymode.AllTest
+ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:104:9-108:52
+	android:screenOrientation
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:108:13-49
+	android:label
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:106:13-44
+	android:theme
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:107:13-44
+	android:name
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:105:13-36
+activity#com.mediatek.factorymode.headset.HeadSet
+ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:111:9-115:52
+	android:screenOrientation
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:115:13-49
+	android:label
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:113:13-44
+	android:theme
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:114:13-44
+	android:name
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:112:13-44
+activity#com.mediatek.factorymode.gps.GPS
+ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:118:9-122:52
+	android:screenOrientation
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:122:13-49
+	android:label
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:120:13-40
+	android:theme
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:121:13-44
+	android:name
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:119:13-36
+activity#com.mediatek.factorymode.gps.GPS1
+ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:123:9-127:52
+	android:screenOrientation
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:127:13-49
+	android:label
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:125:13-41
+	android:theme
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:126:13-44
+	android:name
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:124:13-37
+activity#com.mediatek.factorymode.gps.GPS2
+ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:128:9-132:52
+	android:screenOrientation
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:132:13-49
+	android:label
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:130:13-41
+	android:theme
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:131:13-44
+	android:name
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:129:13-37
+activity#com.mediatek.factorymode.gps.YGPS
+ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:133:9-137:52
+	android:screenOrientation
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:137:13-49
+	android:label
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:135:13-40
+	android:theme
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:136:13-44
+	android:name
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:134:13-37
+activity#com.mediatek.factorymode.vibrator.Vibrator
+ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:140:9-144:52
+	android:screenOrientation
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:144:13-49
+	android:label
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:142:13-45
+	android:theme
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:143:13-44
+	android:name
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:141:13-46
+activity#com.mediatek.factorymode.earphone.Earphone
+ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:147:9-151:52
+	android:screenOrientation
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:151:13-49
+	android:label
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:149:13-45
+	android:theme
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:150:13-44
+	android:name
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:148:13-70
+activity#com.mediatek.factorymode.earphonevibrator.EarphoneVibrator
+ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:154:9-158:52
+	android:screenOrientation
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:158:13-49
+	android:label
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:156:13-53
+	android:theme
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:157:13-44
+	android:name
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:155:13-62
+activity#com.mediatek.factorymode.rgb_led.Rgb_led
+ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:161:9-165:52
+	android:screenOrientation
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:165:13-49
+	android:label
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:163:13-44
+	android:theme
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:164:13-44
+	android:name
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:162:13-44
+activity#com.mediatek.factorymode.kpd_led.kpd_led
+ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:167:11-171:52
+	android:screenOrientation
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:171:13-49
+	android:label
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:169:13-51
+	android:theme
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:170:13-44
+	android:name
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:168:13-44
+activity#com.mediatek.factorymode.signal.Signal
+ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:173:9-177:52
+	android:screenOrientation
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:177:13-49
+	android:label
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:175:13-43
+	android:theme
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:176:13-44
+	android:name
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:174:13-42
+activity#com.mediatek.factorymode.BatteryLog
+ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:179:9-183:52
+	android:screenOrientation
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:183:13-49
+	android:label
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:181:13-47
+	android:theme
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:182:13-44
+	android:name
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:180:13-39
+activity#com.mediatek.factorymode.AdcCheck
+ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:185:9-189:52
+	android:screenOrientation
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:189:13-49
+	android:label
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:187:13-45
+	android:theme
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:188:13-44
+	android:name
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:186:13-37
+activity#com.mediatek.factorymode.DeviceInfo
+ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:191:9-195:52
+	android:screenOrientation
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:195:13-49
+	android:label
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:193:13-48
+	android:theme
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:194:13-44
+	android:name
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:192:13-39
+activity#com.mediatek.factorymode.touchscreen.TouchScreen
+ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:198:9-203:20
+	android:screenOrientation
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:202:13-49
+	android:label
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:200:13-48
+	android:theme
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:201:13-44
+	android:name
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:199:13-52
+activity#com.mediatek.factorymode.touchscreen.TsHandWriting
+ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:204:9-209:20
+	android:screenOrientation
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:208:13-49
+	android:label
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:206:13-60
+	android:theme
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:207:13-44
+	android:name
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:205:13-54
+activity#com.mediatek.factorymode.touchscreen.TsRateReport
+ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:210:9-215:20
+	android:screenOrientation
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:214:13-49
+	android:label
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:212:13-60
+	android:theme
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:213:13-44
+	android:name
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:211:13-53
+activity#com.mediatek.factorymode.touchscreen.TsVerifyList
+ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:216:9-221:20
+	android:screenOrientation
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:220:13-49
+	android:label
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:218:13-61
+	android:theme
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:219:13-44
+	android:name
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:217:13-53
+activity#com.mediatek.factorymode.touchscreen.TsVerifyLine
+ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:222:9-227:20
+	android:screenOrientation
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:225:13-49
+	android:label
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:224:13-65
+	android:theme
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:226:13-77
+	android:name
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:223:13-53
+activity#com.mediatek.factorymode.touchscreen.TsVerifyShakingPoint
+ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:228:9-233:20
+	android:screenOrientation
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:231:13-49
+	android:label
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:230:13-68
+	android:theme
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:232:13-77
+	android:name
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:229:13-61
+activity#com.mediatek.factorymode.touchscreen.TsMultiTouch
+ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:234:9-239:20
+	android:screenOrientation
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:238:13-49
+	android:label
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:236:13-59
+	android:theme
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:237:13-44
+	android:name
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:235:13-53
+activity#com.mediatek.factorymode.touchscreen.TouchScreenSettings
+ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:240:9-245:20
+	android:screenOrientation
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:244:13-49
+	android:label
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:242:13-57
+	android:theme
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:243:13-44
+	android:name
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:241:13-60
+activity#com.mediatek.factorymode.touchscreen.PointTest
+ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:248:9-252:52
+	android:screenOrientation
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:252:13-49
+	android:label
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:250:13-46
+	android:theme
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:251:13-44
+	android:name
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:249:13-50
+activity#com.mediatek.factorymode.touchscreen.LineTest
+ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:253:9-257:52
+	android:screenOrientation
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:257:13-49
+	android:label
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:255:13-45
+	android:theme
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:256:13-44
+	android:name
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:254:13-49
+activity#com.mediatek.factorymode.backlight.BackLight
+ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:259:9-263:52
+	android:screenOrientation
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:263:13-49
+	android:label
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:261:13-46
+	android:theme
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:262:13-44
+	android:name
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:260:13-48
+activity#com.mediatek.factorymode.memory.Memory
+ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:265:9-269:52
+	android:screenOrientation
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:269:13-49
+	android:label
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:267:13-43
+	android:theme
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:268:13-44
+	android:name
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:266:13-42
+activity#com.mediatek.factorymode.microphone.MicRecorder
+ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:272:9-276:52
+	android:screenOrientation
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:276:13-49
+	android:label
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:274:13-47
+	android:theme
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:275:13-44
+	android:name
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:273:13-51
+activity#com.mediatek.factorymode.audio.AudioTest
+ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:279:9-283:52
+	android:screenOrientation
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:283:13-49
+	android:label
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:281:13-42
+	android:theme
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:282:13-44
+	android:name
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:280:13-44
+activity#com.mediatek.factorymode.camera.CameraTest
+ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:286:9-293:58
+	android:screenOrientation
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:291:13-49
+	android:clearTaskOnLaunch
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:292:13-45
+	android:label
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:288:13-43
+	android:configChanges
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:290:13-63
+	android:theme
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:289:13-44
+	android:taskAffinity
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:293:13-55
+	android:name
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:287:13-46
+activity#com.mediatek.factorymode.camera.SubCamera
+ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:294:9-302:58
+	android:screenOrientation
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:299:13-50
+	android:clearTaskOnLaunch
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:300:13-45
+	android:stateNotNeeded
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:301:13-42
+	android:label
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:296:13-43
+	android:configChanges
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:298:13-63
+	android:theme
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:297:13-44
+	android:taskAffinity
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:302:13-55
+	android:name
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:295:13-45
+activity#com.mediatek.factorymode.wifi.WiFiTest
+ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:305:9-309:52
+	android:screenOrientation
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:309:13-49
+	android:label
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:307:13-41
+	android:theme
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:308:13-44
+	android:name
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:306:13-42
+activity#com.mediatek.factorymode.bluetooth.Bluetooth
+ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:312:9-316:52
+	android:screenOrientation
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:316:13-49
+	android:label
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:314:13-46
+	android:theme
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:315:13-44
+	android:name
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:313:13-72
+activity#com.mediatek.factorymode.sensor.GSensor
+ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:319:9-323:52
+	android:screenOrientation
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:323:13-49
+	android:label
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:321:13-44
+	android:theme
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:322:13-44
+	android:name
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:320:13-67
+activity#com.mediatek.factorymode.sensor.GSensorWithCalibrate
+ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:326:9-330:52
+	android:screenOrientation
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:330:13-49
+	android:label
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:328:13-57
+	android:theme
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:329:13-44
+	android:name
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:327:13-80
+activity#com.mediatek.factorymode.sensor.MSensor
+ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:333:9-337:52
+	android:screenOrientation
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:337:13-49
+	android:label
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:335:13-44
+	android:theme
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:336:13-44
+	android:name
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:334:13-67
+activity#com.mediatek.factorymode.sensor.LSensor
+ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:340:9-344:52
+	android:screenOrientation
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:344:13-49
+	android:label
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:342:13-44
+	android:theme
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:343:13-44
+	android:name
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:341:13-67
+activity#com.mediatek.factorymode.sensor.PSensor
+ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:347:9-351:52
+	android:screenOrientation
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:351:13-49
+	android:label
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:349:13-53
+	android:theme
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:350:13-44
+	android:name
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:348:13-67
+activity#com.mediatek.factorymode.sensor.PulseSensor
+ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:354:9-358:52
+	android:screenOrientation
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:358:13-49
+	android:label
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:356:13-54
+	android:theme
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:357:13-44
+	android:name
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:355:13-71
+activity#com.mediatek.factorymode.sensor.GyroscopeSensor
+ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:361:9-365:52
+	android:screenOrientation
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:365:13-49
+	android:label
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:363:13-58
+	android:theme
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:364:13-44
+	android:name
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:362:13-75
+activity#com.mediatek.factorymode.sensor.StepSensor
+ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:368:9-372:52
+	android:screenOrientation
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:372:13-49
+	android:label
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:370:13-53
+	android:theme
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:371:13-44
+	android:name
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:369:13-70
+activity#com.mediatek.factorymode.sensor.PressureSensor
+ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:375:9-379:52
+	android:screenOrientation
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:379:13-49
+	android:label
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:377:13-61
+	android:theme
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:378:13-44
+	android:name
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:376:13-74
+activity#com.mediatek.factorymode.sdcard.SDCard
+ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:382:9-386:52
+	android:screenOrientation
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:386:13-49
+	android:label
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:384:13-43
+	android:theme
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:385:13-44
+	android:name
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:383:13-66
+activity#com.mediatek.factorymode.simsdcard.SimCardPre
+ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:389:9-394:52
+	android:screenOrientation
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:394:13-49
+	android:process
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:393:13-48
+	android:label
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:391:13-44
+	android:theme
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:392:13-44
+	android:name
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:390:13-73
+activity#com.mediatek.factorymode.simsdcard.SimSDCard
+ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:396:9-400:52
+	android:screenOrientation
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:400:13-49
+	android:label
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:398:13-49
+	android:theme
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:399:13-44
+	android:name
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:397:13-48
+activity#com.mediatek.factorymode.fmradio.FMRadio
+ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:403:9-407:52
+	android:screenOrientation
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:407:13-49
+	android:label
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:405:13-44
+	android:theme
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:406:13-44
+	android:name
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:404:13-68
+activity#com.mediatek.factorymode.KeyCode
+ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:410:9-414:52
+	android:screenOrientation
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:414:13-49
+	android:label
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:412:13-44
+	android:theme
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:413:13-44
+	android:name
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:411:13-60
+activity#com.mediatek.factorymode.lcd.LCD
+ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:417:9-421:80
+	android:screenOrientation
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:420:13-49
+	android:label
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:419:13-40
+	android:theme
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:421:13-77
+	android:name
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:418:13-60
+activity#com.mediatek.factorymode.lcd.LCDWhite
+ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:423:9-427:80
+	android:screenOrientation
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:426:13-49
+	android:label
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:425:13-40
+	android:theme
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:427:13-77
+	android:name
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:424:13-65
+activity#com.mediatek.factorymode.simcard.SimCard
+ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:430:9-434:52
+	android:screenOrientation
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:434:13-49
+	android:label
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:432:13-44
+	android:theme
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:433:13-44
+	android:name
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:431:13-68
+activity#com.mediatek.factorymode.otg.OtgState
+ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:437:9-441:52
+	android:screenOrientation
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:441:13-49
+	android:label
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:439:13-40
+	android:theme
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:440:13-44
+	android:name
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:438:13-65
+activity#com.mediatek.factorymode.backtouch.BackTouch
+ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:443:9-447:52
+	android:screenOrientation
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:447:13-49
+	android:label
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:445:13-51
+	android:theme
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:446:13-44
+	android:name
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:444:13-72
+activity#com.mediatek.factorymode.MobileData
+ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:449:9-453:52
+	android:screenOrientation
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:453:13-49
+	android:label
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:451:13-52
+	android:theme
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:452:13-44
+	android:name
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:450:13-63
+activity#com.mediatek.factorymode.WearDetection
+ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:455:9-459:52
+	android:screenOrientation
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:459:13-49
+	android:label
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:457:13-55
+	android:theme
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:458:13-44
+	android:name
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:456:13-66
+activity#com.mediatek.factorymode.Report
+ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:462:9-465:52
+	android:screenOrientation
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:465:13-49
+	android:label
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:464:13-43
+	android:name
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:463:13-59
+activity#com.mediatek.factorymode.hall.Hall
+ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:468:9-472:52
+	android:screenOrientation
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:472:13-49
+	android:label
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:470:13-46
+	android:theme
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:471:13-44
+	android:name
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:469:13-38
+activity#com.mediatek.factorymode.sensor.Nfc
+ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:474:9-478:52
+	android:screenOrientation
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:478:13-49
+	android:label
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:476:13-40
+	android:theme
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:477:13-44
+	android:name
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:475:13-63
+activity#com.mediatek.factorymode.flashlamp.FlashLamp
+ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:479:9-483:52
+	android:screenOrientation
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:483:13-49
+	android:label
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:481:13-47
+	android:theme
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:482:13-44
+	android:name
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:480:13-72
+activity#com.mediatek.factorymode.FactoryDataReset
+ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:485:9-489:52
+	android:screenOrientation
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:489:13-49
+	android:label
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:487:13-55
+	android:theme
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:488:13-44
+	android:name
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:486:13-69
+receiver#com.mediatek.factorymode.FactoryModeReceiver
+ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:491:9-501:20
+	android:name
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:491:19-54
+intent-filter#action:name:android.provider.Telephony.SECRET_CODE+data:host:66+data:scheme:android_secret_code
+ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:492:13-495:29
+intent-filter#action:name:android.intent.action.BOOT_COMPLETED
+ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:497:13-499:29
+action#android.intent.action.BOOT_COMPLETED
+ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:498:18-79
+	android:name
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:498:26-77
+activity#com.mediatek.factorymode.audio.AudioForBatteryTest
+ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:504:9-508:52
+	android:screenOrientation
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:508:13-49
+	android:label
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:506:13-54
+	android:theme
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:507:13-44
+	android:name
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:505:13-54
+uses-sdk
+ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:511:5-44
+INJECTED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:511:5-44
+INJECTED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:511:5-44
+INJECTED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:511:5-44
+INJECTED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:511:5-44
+	android:targetSdkVersion
+		INJECTED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:511:5-44
+		INJECTED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		ADDED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml:511:15-41
+		INJECTED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml
+		INJECTED from F:\Android Studio WorkSpace\FactoryModeA5\app\src\main\AndroidManifest.xml
