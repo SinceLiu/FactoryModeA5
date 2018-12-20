@@ -131,6 +131,15 @@
                     android:id="@+id/sceen_type"
                     style="@style/info_value" />
             </LinearLayout>
+
+            <LinearLayout style="@style/entry_layout">
+                <TextView
+                    android:text="@string/device_gsensor_info"
+                    style="@style/info_label" />
+                <TextView
+                    android:id="@+id/device_gsensor_info"
+                    style="@style/info_value" />
+            </LinearLayout>
             
             <TextView
                 android:id="@+id/to_engineer_mode"

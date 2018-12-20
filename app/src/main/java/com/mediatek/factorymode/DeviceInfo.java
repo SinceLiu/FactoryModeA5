@@ -2,6 +2,8 @@
 package com.mediatek.factorymode;
 
 import android.app.Activity;
+import android.hardware.Sensor;
+import android.hardware.SensorManager;
 import android.os.SystemProperties;
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -56,6 +58,7 @@ public class DeviceInfo extends BaseTestActivity implements OnClickListener {
     private TextView mTPVer;
     private TextView mLCDName;
     private TextView mLCDType;
+    private TextView mGsensorInfo;
     private LinearLayout mMeidLayout;
     private LinearLayout mTpFWLayout;
 
@@ -203,6 +206,7 @@ public class DeviceInfo extends BaseTestActivity implements OnClickListener {
         mTPVer = (TextView) findViewById(R.id.tp_ver);
         mLCDName = (TextView) findViewById(R.id.sceen_name);
         mLCDType = (TextView) findViewById(R.id.sceen_type);
+        mGsensorInfo = (TextView) findViewById(R.id.device_gsensor_info);
         mMeidLayout = (LinearLayout) findViewById(R.id.device_meid_layout);
         if(!SystemProperties.getBoolean("ro.mtk_c2k_support", false)) {
             mMeidLayout.setVisibility(View.GONE);
@@ -239,6 +243,10 @@ public class DeviceInfo extends BaseTestActivity implements OnClickListener {
         mTPVer.setText(readInfo("/sys/readboy/tp_ver"));
         mLCDName.setText(readInfo("/sys/readboy/lcd_name"));
         mLCDType.setText(readInfo("/sys/readboy/lcd_type"));
+
+        SensorManager sensorManager = (SensorManager) getSystemService(SENSOR_SERVICE);
+        Sensor motionSensor = sensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
+        mGsensorInfo.setText(motionSensor.getVendor()+"\n"+motionSensor.getName());
 
         mBtOK = (Button) findViewById(R.id.deviceinfo_bt_ok);
         mBtOK.setOnClickListener(this);

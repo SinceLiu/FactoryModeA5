@@ -9,7 +9,9 @@ import java.io.IOException;
 import java.text.DecimalFormat;
 
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.SharedPreferences;
 import android.content.BroadcastReceiver;
 import android.content.Intent;
@@ -47,7 +49,7 @@ import android.util.Log;
 import com.readboy.nv.NvJniItems;
 
 public class GSensorWithCalibrate extends BaseTestActivity implements OnClickListener {
-	private static final String Tag = "GSensorWithCalibrate";
+    private static final String Tag = "GSensorWithCalibrate";
     private ImageView ivimg;
     private TextView tvSensorX;
     private TextView tvSensorY;
@@ -75,15 +77,16 @@ public class GSensorWithCalibrate extends BaseTestActivity implements OnClickLis
     private static final int MSG_CALIBRATION_FAIL = 0x17;
     private int count = 0;
     private boolean result = false;
+    private boolean fail = false;
     private Handler mHandler = new Handler() {
         @Override
         public void handleMessage(Message msg) {
-            switch(msg.what) {
+            switch (msg.what) {
                 case MSG_GSENSOR_UPDATING:
-                    tvSensorResult.setText(getResources().getString(R.string.GSensor_with_calibrate_result) 
-                        + (count%3==0?".":(count%3==1?"..":(count%3==2?"...":""))));
+                    tvSensorResult.setText(getResources().getString(R.string.GSensor_with_calibrate_result)
+                            + (count % 3 == 0 ? "." : (count % 3 == 1 ? ".." : (count % 3 == 2 ? "..." : ""))));
 
-                    if(count <10) {
+                    if (count < 10) {
                         mHandler.sendEmptyMessageDelayed(MSG_GSENSOR_UPDATING, 200);
                         count++;
                     } else {
@@ -92,18 +95,30 @@ public class GSensorWithCalibrate extends BaseTestActivity implements OnClickLis
                     }
                     break;
                 case MSG_GSENSOR_RESULT:
-                    if(result) {
+                    if(fail){
+                        tvSensorResult.setText(R.string.Failed);
+                        mBtOk.setEnabled(false);
+                        new AlertDialog.Builder(GSensorWithCalibrate.this).setTitle(
+                                R.string.alert_gsensor_title).setMessage(
+                                R.string.alert_gsensor_content).setPositiveButton(
+                                R.string.alert_dialog_gsensor_ok,
+                                new DialogInterface.OnClickListener() {
+                                    public void onClick(DialogInterface dialog,
+                                                        int whichButton) {
+                                    }
+                                }).create().show();
+                    }else if (result) {
                         tvSensorResult.setText(R.string.Success);
                         btnSensorCalicate.setVisibility(View.GONE);
                         mBtOk.setEnabled(true);
-                        if(AllTest.begin_auto_test){
+                        if (AllTest.begin_auto_test) {
                             Utils.SetPreferences(GSensorWithCalibrate.this, mSp, R.string.gsensor_with_calibrate_name, AppDefine.FT_SUCCESS);
                             finish();
                         }
                     } else {
                         tvSensorResult.setText(R.string.Failed);
-                        btnSensorCalicate.setVisibility(View.VISIBLE);
                         mBtOk.setEnabled(false);
+                        btnSensorCalicate.setVisibility(View.VISIBLE);
                     }
                     count = 0;
                     break;
@@ -119,9 +134,9 @@ public class GSensorWithCalibrate extends BaseTestActivity implements OnClickLis
                     break;
                 case MSG_DO_CALIBRATING:
                     tvSensorResult.setText(getResources().getString(R.string.GSensor_with_calibrate_do_calibrate)
-                        + (count%3==0?".":(count%3==1?"..":(count%3==2?"...":""))));
+                            + (count % 3 == 0 ? "." : (count % 3 == 1 ? ".." : (count % 3 == 2 ? "..." : ""))));
 
-                    if(count <50) {
+                    if (count < 50) {
                         mHandler.sendEmptyMessageDelayed(MSG_DO_CALIBRATING, 200);
                         count++;
                     } else {
@@ -136,17 +151,18 @@ public class GSensorWithCalibrate extends BaseTestActivity implements OnClickLis
                     btnSensorCalicate.setEnabled(true);
                     btnSensorCalicate.setVisibility(View.GONE);
                     btnSensorReTest.setVisibility(View.VISIBLE);
-                    
+
                     byte[] nvdata = NvJniItems.getInstance().getNv2499();//read 128 byte
                     String data = read_file("/sys/class/sensors/accelerometer/custom_driver/cali_data");
                     byte[] data_dyte = data.getBytes();
                     int l = data_dyte.length;
                     nvdata[79] = (byte) l;
-                    for(int i =0 ;i<l;i++){
-                    	nvdata[80+i] = data_dyte[i];
+                    Log.e("FactoryMode","GSensor l = " + l);
+                    for (int i = 0; i < l; i++) {
+                        nvdata[80 + i] = data_dyte[i];
                     }
                     NvJniItems.getInstance().writeNv2499(nvdata); //write 128 byte
-                    
+
                     break;
                 case MSG_CALIBRATION_FAIL:
                     tvSensorResult.setText(R.string.proximity_fail);
@@ -164,9 +180,9 @@ public class GSensorWithCalibrate extends BaseTestActivity implements OnClickLis
         @Override
         public void onReceive(Context context, Intent intent) {
             String action = intent.getAction();
-            if("com.mediatek.factorymode.action_calibration_result".equals(action)) {
+            if ("com.mediatek.factorymode.action_calibration_result".equals(action)) {
                 boolean result = intent.getBooleanExtra("result", false);
-                if(result) {
+                if (result) {
                     // success
                     mHandler.sendEmptyMessage(MSG_CALIBRATION_SUCCESS);
                 } else {
@@ -181,14 +197,14 @@ public class GSensorWithCalibrate extends BaseTestActivity implements OnClickLis
         super.onCreate(savedInstanceState);
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
 
-        ActionBar.LayoutParams lp =new  ActionBar.LayoutParams(
+        ActionBar.LayoutParams lp = new ActionBar.LayoutParams(
                 android.view.ViewGroup.LayoutParams.MATCH_PARENT,
                 android.view.ViewGroup.LayoutParams.MATCH_PARENT,
                 Gravity.CENTER);
 
-        View mView =  LayoutInflater.from(this).inflate(R.layout.title, new LinearLayout(this), false);
+        View mView = LayoutInflater.from(this).inflate(R.layout.title, new LinearLayout(this), false);
         TextView mTextView = (TextView) mView.findViewById(R.id.action_bar_title);
-        getActionBar().setCustomView(mView, lp); 
+        getActionBar().setCustomView(mView, lp);
 
         mTextView.setText(getTitle());
 
@@ -219,8 +235,8 @@ public class GSensorWithCalibrate extends BaseTestActivity implements OnClickLis
         mSm = (SensorManager) getSystemService(SENSOR_SERVICE);
         mGravitySensor = mSm.getDefaultSensor(android.hardware.Sensor.TYPE_ACCELEROMETER); //TYPE_GRAVITY  //ellery modify
         boolean suc = mSm.registerListener(lsn, mGravitySensor, SensorManager.SENSOR_DELAY_GAME);
-        Log.d("cwj", "registerListener result:"+suc);
-        
+        Log.d("cwj", "registerListener result:" + suc);
+
         IntentFilter intentFilter = new IntentFilter();
         intentFilter.addAction("com.mediatek.factorymode.action_calibration_result");
         registerReceiver(mReceiver, intentFilter);
@@ -228,6 +244,8 @@ public class GSensorWithCalibrate extends BaseTestActivity implements OnClickLis
 
     protected void onDestroy() {
         mSm.unregisterListener(lsn);
+        unregisterReceiver(mReceiver);
+        mHandler.removeCallbacksAndMessages(null);
         super.onDestroy();
     }
 
@@ -236,14 +254,14 @@ public class GSensorWithCalibrate extends BaseTestActivity implements OnClickLis
         }
 
         public void onSensorChanged(SensorEvent e) {
-        	DecimalFormat decimalFormat=new DecimalFormat("0.000");
+            DecimalFormat decimalFormat = new DecimalFormat("0.000");
             float xx = e.values[SensorManager.DATA_X];
             float yy = e.values[SensorManager.DATA_Y];
             float zz = e.values[SensorManager.DATA_Z];
-            Log.d("cwj", "xx:"+xx+" yy:"+yy+" zz:"+zz);
-            tvSensorX.setText("X: " + ((xx >= 0.0)?"+":"") + decimalFormat.format(xx));
-            tvSensorY.setText("Y: " + ((yy >= 0.0)?"+":"") + decimalFormat.format(yy));
-            tvSensorZ.setText("Z: " + ((zz >= 0.0)?"+":"") + decimalFormat.format(zz));
+            Log.d("cwj", "xx:" + xx + " yy:" + yy + " zz:" + zz);
+            tvSensorX.setText("X: " + ((xx >= 0.0) ? "+" : "") + decimalFormat.format(xx));
+            tvSensorY.setText("Y: " + ((yy >= 0.0) ? "+" : "") + decimalFormat.format(yy));
+            tvSensorZ.setText("Z: " + ((zz >= 0.0) ? "+" : "") + decimalFormat.format(zz));
 
             if (e.sensor == mGravitySensor) {
                 float x = (float) e.values[SensorManager.DATA_X];
@@ -264,10 +282,16 @@ public class GSensorWithCalibrate extends BaseTestActivity implements OnClickLis
                     result = false;
                 }*/
                 boolean zzz = (absz >= 8.5 && absz <= 11.5);
-                if(absx <= 1.5 && absy <= 1.5 && zzz) {
+                if (absx <= 1.5 && absy <= 1.5 && zzz) {
                     result = true;
                 } else {
                     result = false;
+                }
+                zzz = (absz >= 7.0 && absz <= 14.0);
+                if (absx <= 5 && absy <= 5 && zzz) {
+                    fail = false;
+                }else{
+                    fail = true;
                 }
             }
         }
@@ -275,7 +299,7 @@ public class GSensorWithCalibrate extends BaseTestActivity implements OnClickLis
 
     @Override
     public void onClick(View v) {
-        switch(v.getId()) {
+        switch (v.getId()) {
             case R.id.gsensor_bt_ok:
                 Utils.SetPreferences(this, mSp, R.string.gsensor_with_calibrate_name, AppDefine.FT_SUCCESS);
                 finish();
@@ -289,55 +313,59 @@ public class GSensorWithCalibrate extends BaseTestActivity implements OnClickLis
                 Intent intent = new Intent();
                 intent.setAction("com.mediatek.engineermode.action_sensor_emsensor");
                 sendBroadcast(intent);*/
-            	try {
-                	write_file("/sys/class/sensors/accelerometer/custom_driver/enable_cali", "1");
-                	mHandler.sendEmptyMessageDelayed(MSG_CALIBRATION_SUCCESS, 1*1000);
-				} catch (IOException e) {
-					e.printStackTrace();
-					mHandler.sendEmptyMessageDelayed(MSG_CALIBRATION_SUCCESS, 0);
-				}
+                try {
+                    write_file("/sys/class/sensors/accelerometer/custom_driver/enable_cali", "1");
+                    mHandler.sendEmptyMessageDelayed(MSG_CALIBRATION_SUCCESS, 1 * 1000);
+                } catch (IOException e) {
+                    e.printStackTrace();
+                    mHandler.sendEmptyMessageDelayed(MSG_CALIBRATION_SUCCESS, 0);
+                }
                 break;
             case R.id.gsensor_btn_retest:
                 mHandler.sendEmptyMessageDelayed(MSG_GSENSOR_RETEST, 200);
                 break;
+            default:
+                break;
         }
     }
-    
-    public static void write_file(String file_path, String msg) throws IOException{
+
+
+
+    public static void write_file(String file_path, String msg) throws IOException {
         try {
             FileWriter fWriter = new FileWriter(file_path);
             //为了提高字符写入流的效率，加入了缓冲技术
             //只要将需要被提高效率的流对象作为参数传递给缓冲区的构造函数即可
             BufferedWriter bfWriter = new BufferedWriter(fWriter);
-            Log.e(Tag, "write file:"+file_path + ", msg:" + msg);
+            Log.e(Tag, "write file:" + file_path + ", msg:" + msg);
             bfWriter.write(msg);
             bfWriter.newLine();
             //记住，只要用到缓冲区，就要记得刷新。
             fWriter.flush();
             //其实关闭缓存区，就是在关闭缓存区中流对象，所有不再需要关闭fWriter对象
             bfWriter.close();
-        }catch (IOException e) {
-            Log.e(Tag, "write file: "+file_path + "fail");
+        } catch (IOException e) {
+            Log.e(Tag, "write file: " + file_path + "fail");
             e.printStackTrace();
             throw e;
         }
     }
-    
-    public static String read_file(String file_path){
+
+    public static String read_file(String file_path) {
         try {
-        	FileReader fReader = new FileReader(file_path);
-        	BufferedReader bfReader = new BufferedReader(fReader);
-            Log.e(Tag, "read file:"+file_path);
+            FileReader fReader = new FileReader(file_path);
+            BufferedReader bfReader = new BufferedReader(fReader);
+            Log.e(Tag, "read file:" + file_path);
             String str = "";
-            do{
-            	str += bfReader.readLine(); 
-        	}while(bfReader.read()!=-1);
-            Log.e(Tag, "read file:"+file_path+" str:"+str);
+            do {
+                str += bfReader.readLine();
+            } while (bfReader.read() != -1);
+            Log.e(Tag, "read file:" + file_path + " str:" + str);
             bfReader.close();
             fReader.close();
             return str;
-        }catch (IOException e) {
-            Log.e(Tag, "read file:"+file_path + "fail");
+        } catch (IOException e) {
+            Log.e(Tag, "read file:" + file_path + "fail");
             e.printStackTrace();
             return "";
         }

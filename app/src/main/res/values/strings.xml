@@ -148,6 +148,7 @@
     <string name="GSensor_with_calibrate_do_calibrate">Calibrating</string>
     <string name="GSensor_with_calibrate_result">Testing</string>
     <string name="GSensor_with_calibrate_retest">ReTest</string>
+    <string name="GSensor_with_calibrate_recover">ReCover</string>
     <!-- MSensor part -->
     <string name="MSensor">MSensor</string>
     <string name="MSensor_default_text">Unknown data</string>
@@ -226,6 +227,17 @@
     <string name="alert_dialog_cancel">Cancel</string>
     <string name="alert_title">Factory reset</string>
     <string name="alert_content">Are you sure to reset factory？</string>
+
+    <!-- Factory GSensor fail -->
+    <string name="alert_dialog_gsensor_ok">OK</string>
+    <string name="alert_gsensor_title">GSensor fail</string>
+    <string name="alert_gsensor_content">Deviration is too large!</string>
+
+    <!-- Factory recover calibrate -->
+    <string name="alert_dialog_recover_ok">OK</string>
+    <string name="alert_dialog_recover_cancel">Cancel</string>
+    <string name="alert_recover_title">Recover calibrate</string>
+    <string name="alert_recover_content">Are you sure to recover calibrate？</string>
 
     <!-- SDcard part -->
     <string name="sdcard">T card</string>
@@ -325,6 +337,7 @@
     <string name="device_sceen_name">Sceen name:</string>
     <string name="device_sceen_type">Sceen type:</string>
     <string name="device_to_engineer_mode">click to entry Engineer Mode</string>
+    <string name="device_gsensor_info">GSensor manufacturer:</string>
 
     <!-- mcube add start -->
     <string name="gesture_settings">Gesture &amp; motion</string>

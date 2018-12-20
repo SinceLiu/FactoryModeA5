@@ -146,6 +146,7 @@
     <string name="GSensor_with_calibrate_do_calibrate">校准中</string>
     <string name="GSensor_with_calibrate_result">测试中</string>
     <string name="GSensor_with_calibrate_retest">重新测试</string>
+    <string name="GSensor_with_calibrate_recover">清除校准</string>
     <!--MSensor part -->
     <string name="MSensor">磁力传感器</string>
     <string name="MSensor_default_text">未知数据</string>
@@ -228,6 +229,17 @@
     <string name="alert_dialog_cancel">取消</string>
     <string name="alert_title">恢复出厂设置</string>
     <string name="alert_content">是否恢复出厂设置？</string>
+
+    <!-- Factory GSensor fail -->
+    <string name="alert_dialog_gsensor_ok">确定</string>
+    <string name="alert_gsensor_title">重力检测失效</string>
+    <string name="alert_gsensor_content">重力检测误差过大，请挑出机器！</string>
+
+    <!-- Factory recover calibrate -->
+    <string name="alert_dialog_recover_ok">确定</string>
+    <string name="alert_dialog_recover_cancel">取消</string>
+    <string name="alert_recover_title">清除重力校准</string>
+    <string name="alert_recover_content">是否清除重力校准？</string>
     
     <!-- SDcard part -->
     <string name="sdcard">T卡</string>
@@ -334,6 +346,7 @@
     <string name="device_sceen_name">屏幕名称：</string>
     <string name="device_sceen_type">屏幕类型：</string>
     <string name="device_to_engineer_mode">点击进入工程测试</string>
+    <string name="device_gsensor_info">重力传感器厂家：</string>
     <!-- mcube add start -->
     <string name="gesture_settings">手势体感</string>
     <string name="calibration_settings_title">重力校准</string>
