@@ -88,11 +88,10 @@ public class FactoryMode extends Activity implements OnItemClickListener {
             // R.string.mobiledata_name,
             R.string.weardetection_name,
             R.string.device_info,
-            R.string.battery_used_name,
             R.string.lcd_white_name,
             R.string.factory_reset,
-            R.string.GSensor_with_calibrate_recover
-
+            R.string.GSensor_with_calibrate_recover,
+            R.string.battery_used_name
     };
 
     @Override
@@ -178,13 +177,25 @@ public class FactoryMode extends Activity implements OnItemClickListener {
             return position;
         }
 
+        @Override
         public View getView(int position, View convertView, ViewGroup parent) {
-            convertView = mInflater.inflate(R.layout.main_grid, null);
-            TextView textview = (TextView) convertView.findViewById(R.id.factor_button);
-            textview.setText(mListData.get(position));
-            SetColor(textview);
+            ViewHolder holder;
+            if (convertView == null) {
+                holder = new ViewHolder();
+                convertView = mInflater.inflate(R.layout.main_grid, null);
+                holder.textView = (TextView) convertView.findViewById(R.id.factor_button);
+                convertView.setTag(holder);
+            } else {
+                holder = (ViewHolder) convertView.getTag();
+            }
+            holder.textView.setText(mListData.get(position));
+            SetColor(holder.textView);
             return convertView;
         }
+    }
+
+    public class ViewHolder {
+        TextView textView;
     }
 
     private void init() {
@@ -493,7 +504,7 @@ public class FactoryMode extends Activity implements OnItemClickListener {
                         }).create().show();
                 return;
             }
-            if(getString(R.string.GSensor_with_calibrate_recover).equals(name)){
+            if (getString(R.string.GSensor_with_calibrate_recover).equals(name)) {
                 new AlertDialog.Builder(FactoryMode.this).setTitle(
                         R.string.alert_recover_title).setMessage(
                         R.string.alert_recover_content).setPositiveButton(
@@ -502,7 +513,7 @@ public class FactoryMode extends Activity implements OnItemClickListener {
                             public void onClick(DialogInterface dialog,
                                                 int whichButton) {
                                 recoverCalibrate();
-                                Toast.makeText(FactoryMode.this,"清除校准成功！",Toast.LENGTH_SHORT).show();
+                                Toast.makeText(FactoryMode.this, "清除校准成功！", Toast.LENGTH_SHORT).show();
                             }
                         }).setNegativeButton(R.string.alert_dialog_recover_cancel,
                         new DialogInterface.OnClickListener() {
@@ -552,21 +563,21 @@ public class FactoryMode extends Activity implements OnItemClickListener {
         startActivity(intent);
     }
 
-    public void recoverCalibrate(){
+    public void recoverCalibrate() {
         byte[] nvdata = NvJniItems.getInstance().getNv2499();//read 128 byte
         String data = GSensorWithCalibrate.read_file("/sys/class/sensors/accelerometer/custom_driver/cali_data");
         byte[] data_dyte = data.getBytes();
         int l = data_dyte.length;
         nvdata[79] = (byte) l;
-        Log.e("FactoryMode","l = " + l);
+        Log.e("FactoryMode", "l = " + l);
         for (int i = 0; i < l; i++) {
             nvdata[80 + i] = 0;
         }
         nvdata[79] = 0;
         NvJniItems.getInstance().writeNv2499(nvdata); //write 128 byte
-        try{
-            GSensorWithCalibrate.write_file("/sys/class/sensors/accelerometer/custom_driver/cali_data","0 0 0");
-        }catch (Exception e){
+        try {
+            GSensorWithCalibrate.write_file("/sys/class/sensors/accelerometer/custom_driver/cali_data", "0 0 0");
+        } catch (Exception e) {
             e.printStackTrace();
         }
 
